@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <!-- Cover Page -->
+        <div class="cover">
+            <h1>Happy Valentine’s Day</h1>
+            <img src="./assets/i0.png" alt="Valentine's Day">
+            <button onclick="startPages()"><i class="fa-solid fa-right-long"></i></button>
+        </div>
+        
+        <!-- Pages (Initially Hidden) -->
+        <div class="pages">
+            <!-- Floating Hearts & Sparkles -->
+            <div class="hearts">
+                <div class="heart a1"></div>
+                <div class="heart a2"></div>
+                <div class="heart a3"></div>
+            </div>
+            <div class="sparkles">
+                <div class="sparkle s1"></div>
+                <div class="sparkle s2"></div>
+                <div class="sparkle s3"></div>
+            </div>
+
+            <!-- Page 1 -->
+            <div class="page page1">
+                <div class="left">
+                    <img src="./assets/i1.jpg" alt="More Than Stars" class="img1">
+                </div>
+                <div class="right">
+                    <h2>More Than Stars ✨</h2>
+                    <p>I love you more than stars that shimmer at night ✨🌌,</p>
+                    <p>As heaven rests upon my chest ☁️💖,</p>
+                    <p>You in my arms, love glowing bright 💫.</p>
+                </div>
+            </div>
+
+            <!-- Page 2 -->
+            <div class="page page2">
+                <div class="left">
+                    <img src="./assets/i2.jpg" alt="A Fleeting Moment, Endless Love" class="img2">
+                </div>
+                <div class="right">
+                    <h2>A Fleeting Moment, Endless Love 🌅</h2>
+                    <p>A fleeting moment, yet endless as the sun’s descent 🌅,</p>
+                    <p>While the beauty in your eyes rises, soft as the moon 🌙.</p>
+                    <p>I longed for more—a silent no, A whisper laced with laughter’s grace 😊💞.</p>
+                </div>
+            </div>
+
+            <!-- Page 3 -->
+            <div class="page page3">
+                <div class="left">
+                    <img src="./assets/i3.jpg" alt="The Tether of Love" class="img3">
+                </div>
+                <div class="right">
+                    <h2>The Tether of Love 🥰</h2>
+                    <p>A gentle push, yet an endless pull,</p>
+                    <p>Your smile, the tether that keeps me whole 🥰.</p>
+                    <p>My arms tighten, afraid to part 🤗.</p>
+                </div>
+            </div>
+
+            <!-- Page 4 -->
+            <div class="page page4">
+                <div class="left">
+                    <img src="./assets/i4.jpg" alt="Fires of the Heart" class="img4">
+                </div>
+                <div class="right">
+                    <h2>Fires of the Heart ❤️‍🔥</h2>
+                    <p>Holding the fire that warms my heart ❤️‍🔥,</p>
+                    <p>For in your love, the night ignites 🔥,</p>
+                    <p>And every smile outshines the stars ✨💖.</p>
+                </div>
+            </div>
+
+            <!-- Page 5 -->
+            <div class="page page5">
+                <div class="left">
+                    <img src="./assets/heart.png" alt="Heart" class="img5">
+                </div>
+                <div class="right">
+                    <p>I love you ❤️</p>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <button id="prev" onclick="prevPage()"><i class="fa-solid fa-left-long"></i></button>
+            <button id="next" onclick="nextPage()"><i class="fa-solid fa-right-long"></i></button>
+            <button id="close" onclick="closePages()" style="display: none;"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
