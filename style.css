@@ -69,10 +69,10 @@ img {
 /* Floating Hearts & Sparkles */
 .hearts, .sparkles {
     position: absolute;
-    top: 5%;
+    top: 90px; /* Adjusted to original position */
     left: 0;
     right: 0;
-    z-index: 2;
+    z-index: 2; /* Ensure hearts and sparkles are above images */
 }
 
 .heart, .sparkle {
@@ -85,12 +85,12 @@ img {
 .heart:after {
     content: "";
     position: absolute;
-    left: 15px;
+    left: 25px;
     top: 0;
-    width: 20px;
-    height: 30px;
-    background: red;
-    border-radius: 20px 20px 0 0;
+    width: 25px;
+    height: 40px;
+    background: red; /* Heart color */
+    border-radius: 25px 25px 0 0;
     transform: rotate(-45deg);
     transform-origin: 0 100%;
 }
@@ -102,14 +102,22 @@ img {
 }
 
 .sparkle {
-    width: 6px;
-    height: 6px;
-    background: gold;
+    width: 8px;
+    height: 8px;
+    background: gold; /* Sparkle color */
     border-radius: 50%;
     animation: sparkleTwinkle 1s infinite;
 }
 
 /* Animations */
+.a1 { left: 20%; transform: scale(0.6); animation: slideUp 4s linear infinite, sideSway 2s ease-in-out infinite alternate; }
+.a2 { left: 55%; animation: slideUp 5s linear infinite, sideSway 4s ease-in-out infinite alternate; }
+.a3 { left: 10%; transform: scale(0.8); animation: slideUp 7s linear infinite, sideSway 2s ease-in-out infinite alternate; }
+
+.s1 { left: 30%; animation: sparkleUp 3s linear infinite; }
+.s2 { left: 60%; animation: sparkleUp 4s linear infinite; }
+.s3 { left: 45%; animation: sparkleUp 5s linear infinite; }
+
 @keyframes slideUp {
     0% { top: 0; }
     100% { top: -600px; }
